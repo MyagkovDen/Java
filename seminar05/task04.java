@@ -9,17 +9,17 @@ public class task04 {
         int x; // поле по горизонтали
         int y; // поле по вертикали
         for (int l = 1; l < 9; l++) {
-            System.out.println("start");
-            System.out.println (l);
-            board.clear();
+            //System.out.println("start");
+            //System.out.println (l);
+            //board.clear();
             board.put(1, l);
             for (x = 2; x < 9; x++) {
                 for (y = 1; y < 9; y++) {
                     boolean flag = true;
                     for (int k = 1; k < x; k++) {
-                        System.out.println(board);
-                        System.out.printf("x: %d, y: %d, k: %d", x, y, k);
-                        System.out.printf("  b: %d", board.get(x - k));
+                        //System.out.println(board);
+                        //System.out.printf("x: %d, y: %d, k: %d", x, y, k);
+                        //System.out.printf("  b: %d", board.get(x - k));
                         if (board.get(x - k) == null) {
                             flag = false;
                             break;
@@ -32,7 +32,7 @@ public class task04 {
                     }
                     if (flag) {
                         board.put(x, y);
-                        System.out.println(board);
+                        //System.out.println(board);
                         break;
                     }
                 }
@@ -42,6 +42,7 @@ public class task04 {
                 return;
             }
         }
+        System.out.println(board);
     }
 }
 
