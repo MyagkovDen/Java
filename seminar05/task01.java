@@ -25,7 +25,9 @@ public class task01 {
             }
             directory.put(name, phoneNumbers);
         }
-        System.out.println(directory);
+        for (var item: directory.entrySet()) {
+            System.out.printf("%s\t %s\n", item.getKey(), item.getValue());
+        }
     }
 }
 
