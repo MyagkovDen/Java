@@ -16,8 +16,12 @@ public class task01 {
             System.out.print("Введите номера телефонов через пробел: ");
             ArrayList<Integer> phoneNumbers = new ArrayList<>();
             String[] numbers = iScanner.nextLine().split(" ");
-            for (String number : numbers) {
-                phoneNumbers.add(Integer.parseInt(number));
+            try {
+                for (String number : numbers) {
+                    phoneNumbers.add(Integer.parseInt(number));
+                }
+            } catch (Exception ex) {
+                System.out.println("Введен неправильный номер!");
             }
             directory.put(name, phoneNumbers);
         }

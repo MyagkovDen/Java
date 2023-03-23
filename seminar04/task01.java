@@ -8,7 +8,7 @@ import java.util.Random;
 public class task01 {
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i < 6; i++) {
             list.add(new Random().nextInt(5));
         }
         System.out.println(list);

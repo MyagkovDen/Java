@@ -27,7 +27,7 @@ public class task02 {
                 freq.put(item, count);
             }
         }
-        System.out.println(freq);
+        // System.out.println(freq);
 
         LinkedHashMap<String, Integer> sortedNames = new LinkedHashMap<>();
         int max = 0;
